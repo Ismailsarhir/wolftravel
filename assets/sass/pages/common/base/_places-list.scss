@@ -70,6 +70,9 @@
 
     &-title {
       margin: 0;
+      @media (max-width: 767px) {
+        font-size: max(20px, 2000svw / var(--w));
+      }
     }
     
     &-content {

@@ -15,7 +15,7 @@ h1,
 @media (max-width: 767px) {
   h1,
   .h1 {
-    font-size: max(33px, 3300svw / var(--w));
+    font-size: max(30px, 3000svw / var(--w));
   }
 }
 

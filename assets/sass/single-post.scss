@@ -1,0 +1,9 @@
+@import "utils/index";
+
+@import "pages/common/base/animated-title";
+@import "pages/blog/base/single-post";
+
+/* Desktop */
+@include breakpoint(md--min-width) {
+  @import "pages/blog/desktop/single-post";
+}

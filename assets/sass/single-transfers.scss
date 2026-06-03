@@ -1,0 +1,18 @@
+@import "utils/index";
+
+@import "pages/common/base/keywords";
+@import "pages/common/base/description";
+@import "pages/common/base/banner";
+
+@import "pages/single/base/index";
+
+
+/* Tablet */
+@include breakpoint(sm--min-width) {
+  @import "pages/common/tablet/banner";
+}
+
+/* Desktop */
+@include breakpoint(md--min-width) {
+  @import "pages/single/desktop/index";
+}

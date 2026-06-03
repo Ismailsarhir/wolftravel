@@ -1,0 +1,19 @@
+@import "utils/index";
+@import "utils/fonts";
+@import "utils/reset";
+
+@import "pages/common/index";
+@import "pages/header/base/index";
+@import "pages/prefooter/base/index";
+@import "pages/footer/base/index";
+
+/* Tablet */
+@include breakpoint(sm--min-width) {
+  @import "pages/prefooter/tablet/index";
+}
+
+/* Desktop */
+@include breakpoint(md--min-width) {
+  @import "pages/header/desktop/index";
+  @import "pages/footer/desktop/index";
+}

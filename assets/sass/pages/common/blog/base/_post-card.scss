@@ -1,0 +1,101 @@
+.post-card {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  background: var(--blue-grey);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all var(--tm) var(--smooth);
+  flex-flow: column nowrap;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: var(--blue-dark);
+    transition: all .5s var(--ease-out);
+  }
+
+  &:hover {
+    &,
+    .post-card__infos-title {
+      color: var(--blue-grey-light);
+    }
+
+    &::before {
+      height: 100%;
+    }
+  }
+
+  .tag {
+    display: inline-block;
+    margin: 0 .2142857143em .2142857143em 0;
+    padding: .5714285714em .4285714286em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border-radius: var(--radius);
+    outline: 1px solid;
+    outline-offset: -1px;
+    @include typographic($font-ibmplexmono, max(12px, 1200svw / var(--w)), 400, inherit, 1);
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &-wrapper {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+
+      .tag {
+        position: absolute;
+        bottom: max(7px, 700svw / var(--w));
+        left: max(10px, 1000svw / var(--w));
+        color: var(--blue-dark);
+        background: var(--blue-grey-light);
+        outline: none;
+      }
+    }
+  }
+
+  &__infos {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column nowrap;
+    padding: max(14px, 1400svw / var(--w));
+
+    &-meta {
+      display: flex;
+      align-items: center;
+      gap: .8em;
+      margin-bottom: .7em;
+      @include typographic($font-ibmplexmono, max(11px, 1100svw / var(--w)), 400, inherit, 1.2);
+      opacity: .6;
+    }
+
+    &-date,
+    &-reading-time {
+      text-transform: uppercase;
+    }
+
+    &-title {
+      flex-grow: 1;
+      margin: 0 0 .6em;
+      font-size: clamp(18px, 2200svw / var(--w), 26px);
+    }
+
+    &-excerpt {
+      margin: 0;
+      font-size: clamp(12px, 1400svw / var(--w), 15px);
+      line-height: 1.5;
+      opacity: .7;
+    }
+  }
+}

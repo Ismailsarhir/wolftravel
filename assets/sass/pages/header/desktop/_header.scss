@@ -1,0 +1,15 @@
+.header {
+  &__logo {
+    width: max(70px, 7000svw / var(--w));
+  }
+
+  &__search-toggle {
+    margin-inline: 0;
+  }
+
+  &__right {
+    .cta {
+      display: inline-flex;
+    }
+  }
+}

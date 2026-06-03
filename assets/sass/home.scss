@@ -1,0 +1,37 @@
+@import "utils/index";
+
+@import "pages/home/base/index";
+
+@import "pages/common/tours/base/tours-list";
+@import "pages/common/tours/base/tour-card";
+@import "pages/common/circuits/base/circuits-list";
+@import "pages/common/circuits/base/circuit-card";
+@import "pages/common/base/featured-text";
+@import "pages/common/transferts/base/transferts-list";
+@import "pages/common/transferts/base/transfert-card";
+@import "pages/common/blog/base/posts-list";
+@import "pages/common/blog/base/post-card";
+/* Tablet */
+@include breakpoint(sm--min-width) {
+  @import "pages/home/tablet/index";
+
+  @import "pages/common/tours/tablet/tours-list";
+  @import "pages/common/circuits/tablet/circuits-list";
+  @import "pages/common/tablet/featured-text";
+  @import "pages/common/transferts/tablet/transferts-list";
+  @import "pages/common/transferts/tablet/transfert-card";
+  @import "pages/common/blog/tablet/posts-list";
+  @import "pages/common/blog/tablet/post-card";
+}
+
+/* Desktop */
+@include breakpoint(md--min-width) {
+  @import "pages/home/desktop/index";
+
+  @import "pages/common/tours/desktop/tours-list";
+  @import "pages/common/tours/desktop/tour-card";
+  @import "pages/common/circuits/desktop/circuits-list";
+  @import "pages/common/circuits/desktop/circuit-card";
+  @import "pages/common/blog/desktop/posts-list";
+  @import "pages/common/blog/desktop/post-card";
+}

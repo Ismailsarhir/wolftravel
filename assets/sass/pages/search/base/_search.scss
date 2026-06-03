@@ -1,0 +1,29 @@
+.search {
+  &-hero {
+    margin-inline: var(--gutter);
+    padding-block: calc(var(--header-spacing) + max(47px, 4700svw / var(--w))) max(47px, 4700svw / var(--w));    text-align: center;
+  }
+
+  &-no-results {
+    &__message {
+      font-size: max(50px, 5000svw / var(--w));
+    }
+
+    &__suggestions {
+      ul {
+        margin: 0;
+        padding-left: 1em;
+        list-style: disc;
+
+        li {
+          margin: 0;
+          line-height: 1.23;
+        }
+      }
+    }
+  }
+}
+
+.module__title {
+  font-size: max(50px, 5000svw / var(--w));
+}

@@ -1,0 +1,23 @@
+@import "utils/index";
+
+@import "pages/common/blog/base/posts-list";
+@import "pages/common/blog/base/post-card";
+@import "pages/common/base/animated-title";
+@import "pages/common/base/pager";
+
+@import "pages/archive/base/archive-hero";
+@import "pages/blog/base/archive";
+
+/* Tablet */
+@include breakpoint(sm--min-width) {
+  @import "pages/common/blog/tablet/posts-list";
+  @import "pages/common/blog/tablet/post-card";
+}
+
+/* Desktop */
+@include breakpoint(md--min-width) {
+  @import "pages/common/blog/desktop/posts-list";
+  @import "pages/common/blog/desktop/post-card";
+  @import "pages/archive/desktop/archive-hero";
+  @import "pages/blog/desktop/archive";
+}

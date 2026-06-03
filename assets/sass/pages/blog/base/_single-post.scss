@@ -58,7 +58,11 @@
 
   &__title {
     margin: 0 0 .8em;
-    font-size: clamp(28px, 4800svw / var(--w), 56px);
+    font-size: clamp(20px, 2800svw / var(--w), 56px);
+    
+    @include breakpoint(md--min-width) {
+      font-size: clamp(28px, 4800svw / var(--w), 56px);
+    }
   }
 
   &__meta {
@@ -98,7 +102,7 @@
     line-height: 1.7;
 
     h2 {
-      @include typographic($font-gascone, clamp(24px, 2800svw / var(--w), 32px), 400, inherit, 1);
+      @include typographic($font-gascone, clamp(20px, 2200svw / var(--w), 32px), 400, inherit, 1);
       margin-top: 1.6em;
       margin-bottom: .5em;
       font-style: italic;

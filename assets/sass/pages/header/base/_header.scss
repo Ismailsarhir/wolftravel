@@ -114,6 +114,7 @@
     top: calc(100% + 5px);
     right: auto;
     left: 0;
+    z-index: 2;
     width: 100%;
     max-height: calc(100svh - var(--header-spacing) - var(--gutter) / 2);
     background: inherit;

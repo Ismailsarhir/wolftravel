@@ -14,4 +14,8 @@
 /* Desktop */
 @include breakpoint(md--min-width) {
   @import "pages/contact/desktop/index";
+
+  .page .page__body {
+    font-size: clamp(16px, 1800svw / var(--w), 19px);
+  }
 }

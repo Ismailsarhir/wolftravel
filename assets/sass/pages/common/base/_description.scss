@@ -38,7 +38,8 @@
   }
 
   &__list {
-    line-height: 1.58;
+    font-size: clamp(15px, 1700svw / var(--w), 18px);
+    line-height: 1.7;
 
     &.is-bold {
       margin: 0;
@@ -53,14 +54,87 @@
       }
     }
 
-    P {
-      margin-block: 1.6470588235em;
+    h2 {
+      @include typographic($font-gascone, clamp(20px, 2200svw / var(--w), 32px), 400, inherit, 1);
+      margin-top: 1.6em;
+      margin-bottom: .5em;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      @include typographic($font-gascone, clamp(20px, 2200svw / var(--w), 26px), 400, inherit, 1.05);
+      margin-top: 1.6em;
+      margin-bottom: .5em;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      @include typographic($font-ppneuemontreal-bold, clamp(17px, 1900svw / var(--w), 22px), 700, inherit, 1.2);
+      margin-top: 1.6em;
+      margin-bottom: .5em;
+    }
+
+    h5 {
+      @include typographic($font-ppneuemontreal-bold, clamp(15px, 1700svw / var(--w), 19px), 700, inherit, 1.3);
+      margin-top: 1.6em;
+      margin-bottom: .5em;
+    }
+
+    h6 {
+      @include typographic($font-ibmplexmono, clamp(12px, 1400svw / var(--w), 15px), 400, inherit, 1.3);
+      margin-top: 1.6em;
+      margin-bottom: .5em;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      opacity: .7;
+    }
+
+    p {
+      margin-bottom: 1.2em;
       &:first-child {
         margin-top: 0;
         strong {
           font-family: $font-ppneuemontreal-bold;
           text-transform: uppercase;
         }
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+    }
+
+    a {
+      text-decoration: underline;
+      color: inherit;
+      text-underline-offset: .2em;
+    }
+
+    ul,
+    ol {
+      margin-bottom: 1.2em;
+      padding-left: 1.5em;
+
+      li {
+        margin-bottom: .4em;
+        line-height: 1.6;
+      }
+    }
+
+    blockquote {
+      margin: 2em 0;
+      padding: 1.2em 1.5em;
+      font-style: italic;
+      background: var(--blue-grey);
+      border-left: 4px solid var(--blue-dark);
+      border-radius: 0 var(--radius) var(--radius) 0;
+
+      p {
+        margin: 0;
       }
     }
   }

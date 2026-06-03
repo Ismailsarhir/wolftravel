@@ -112,14 +112,6 @@ class Separated_Js_Injector {
 					];
 				},
 			],
-			'page' => [
-				'condition' => function() {
-					return \is_page();
-				},
-				'file_name' => 'default',
-				'dependencies' => [ 'default_js' ],
-				'dequeues' => [],
-			],
 			'single-post' => [
 				'condition' => function() {
 					return \is_singular( 'post' );

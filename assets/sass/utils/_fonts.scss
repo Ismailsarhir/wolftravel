@@ -1,0 +1,34 @@
+/* Gascone */
+@font-face {
+  font-family: "ClimateCrisis-Regular";
+  src: url($fonts_path + '/ClimateCrisis/ClimateCrisis.woff2') format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-stretch: 100%;
+  font-display: swap;
+}
+
+/* IBM Plex Mono */
+@font-face {
+  font-family: "Ibmplexmono-Regular";
+  src: url($fonts_path + '/ibmplexmono/ibmplexmono-regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* PP Neue Montreal */
+@font-face {
+  font-family: "PPNeueMontreal-Regular";
+  src: url($fonts_path + '/PPNeueMontreal/PPNeueMontreal-regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PPNeueMontreal-Bold";
+  src: url($fonts_path + '/PPNeueMontreal/PPNeueMontreal-bold.woff2') format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

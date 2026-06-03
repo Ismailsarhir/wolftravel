@@ -1,0 +1,7 @@
+.blog-archive-hero {
+  min-height: 40svh;
+
+  .archive-hero__title {
+    font-size: clamp(52px, 7000svw / var(--w), 96px);
+  }
+}

@@ -1,0 +1,32 @@
+.social-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  li {
+    &,a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3rem;
+      height: 3rem;
+      color: $white-color;
+      background: var(--blue);
+      border-radius: .4rem;
+      transition: all .2s ease;
+      transition: all .2s ease;
+
+      &:hover {
+        color: var(--blue);
+        background-color: $white-color;
+      }
+    }
+
+    svg {
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}

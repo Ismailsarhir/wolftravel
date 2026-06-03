@@ -1,0 +1,30 @@
+.blog-archive-hero {
+  min-height: 50svh;
+  background: var(--blue-dark);
+
+  &::before {
+    opacity: 0.6;
+  }
+
+  .archive-hero__inner {
+    align-items: center;
+  }
+
+  .archive-hero__title {
+    font-size: clamp(36px, 6000svw / var(--w), 80px);
+    text-align: center;
+  }
+
+  .archive-hero__subtitle {
+    margin-top: .5em;
+    font-size: clamp(14px, 1600svw / var(--w), 18px);
+    text-align: center;
+    opacity: .7;
+  }
+}
+
+.postsList--archive {
+  .postsList__inner {
+    padding-top: max(60px, 6000svw / var(--w));
+  }
+}

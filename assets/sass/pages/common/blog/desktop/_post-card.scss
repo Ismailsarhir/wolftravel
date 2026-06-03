@@ -1,0 +1,7 @@
+.post-card {
+  &__img {
+    &-wrapper {
+      aspect-ratio: 16 / 9;
+    }
+  }
+}
